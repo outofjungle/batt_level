@@ -18,7 +18,7 @@ void setup() {
 }
 
 void loop() {
-  Vout = analogRead(A1) * (5.0/1023.0);
+  Vout = analogRead(A2) * (5.0/1023.0);
   Vin = weight * Vout;
 
   dtostrf(Vin, 2, 2, Vin_buffer);
